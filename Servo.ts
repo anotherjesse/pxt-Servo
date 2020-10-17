@@ -90,6 +90,16 @@ namespace Servo {
         buf[4] = (off >> 8) & 0xff;
         pins.i2cWriteBuffer(PCA9685_ADDRESS, buf);
     }
+	
+	
+   /**
+     * get the character code at a location
+     */
+    //% block
+    export function charCodeAt(text: string, location: number): number {
+        return text.charCodeAt(location);
+    }
+
 
 	/**
 	 * Servo Execute
